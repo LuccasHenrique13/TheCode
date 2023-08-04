@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.backg{
+    height: 47.6vw;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar img{
+    height: 1.5rem;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: -1;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.seta{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seta img{
+ height: 30px;
+ width: auto;
+}
+
+.text{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.titulos{
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 50px;
+    font-weight: 800;
+}
+
+#linguagens{
+    padding: 20px;
+    font-size: 40px;
+}
+
+.portifolioImg{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portifolioImg img{
+    padding: 20px;
+    height: 20rem;
+    width: 30rem;
+
+}
