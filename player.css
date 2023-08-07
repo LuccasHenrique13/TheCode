@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/* scrollbar */
+
+/* header */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #fff;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.navbar a, i{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+.navbar .spotify:hover{
+    color: #1ed760ff;
+}
+
+.navbar #spotify{
+    color: #1ed760ff;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.navbar img{
+    height: 1.5rem;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon{
+    display: none !important;
+    cursor: pointer;
+}
+
+/* navbar menu */
+#checkbox2 {
+    display: none;
+}
+  
+.toggle2 {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition-duration: .5s;
+}
+  
+.bars {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 10px;
+}
+  
+#bar5 {
+    transition-duration: .8s;
+}
+  
+#bar4,#bar6 {
+    width: 80%;
+}
+  
+#checkbox2:checked + .toggle2 .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+  
+#checkbox2:checked + .toggle2 #bar5 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+  
+#checkbox2:checked + .toggle2 #bar4 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox2:checked + .toggle2 #bar6 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox2:checked + .toggle2 {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+
+  /**/
+
+.background{
+    overflow: auto;
+    position: relative;
+}
+
+.background{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url(./assets/teste.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+
+.back-g{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-g img{
+    display: flex;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.back-g video{
+    height: 100%;
+    filter: brightness(0.4); 
+}
