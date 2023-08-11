@@ -373,8 +373,8 @@ footer {
 }
 
 .footer-content img{
-    height: 2.5rem;
     padding: 40px;
+    width: 300px;
 }
 
 @media (max-width: 1024px) {
@@ -437,6 +437,12 @@ footer {
 
     .navbar {
         padding: 15px 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer-content img {
+        width: 200px;
     }
 }
 
